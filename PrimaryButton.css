@@ -1,0 +1,64 @@
+/* Основной контейнер для кнопки */
+.PrimaryButtonContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 2.5rem;
+
+	cursor: pointer;
+	white-space: nowrap;
+	width: 100%;
+
+	font-size: inherit;
+
+	background: #375FFF;
+	border-radius: 8px;
+	border: 0;
+	transition: 0.3s ease-out;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+/* Модификатор для маленькой версии кнопки */
+.PrimaryButtonContainer.small{
+	padding: 0.5rem 1rem;
+	border-radius: 1rem;
+}
+/* Стили при наведении на кнопку */
+.PrimaryButtonContainer:hover{
+	background: #002FEA;
+}
+/* Стили при активном состоянии (нажатии) */
+.PrimaryButtonContainer:active{
+	background: #204CFF;
+}
+/* Стили для неактивной кнопки */
+.PrimaryButtonContainer:disabled{
+	background: #97A9F1;
+	cursor: default;
+}
+/* Стили для текста внутри кнопки */
+.PrimaryButtonText{
+	height: 19px;
+
+	font-style: normal;
+	font-weight: 400;
+	font-size: inherit;
+	line-height: 1.3rem;
+
+	cursor: inherit;
+
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+
+}
+/* Модификатор для текста в маленькой кнопке */
+.PrimaryButtonText.small{
+	line-height: 1rem;
+	text-transform: none;
+
+}
